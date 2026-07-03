@@ -23,7 +23,7 @@
     };
 
     var game = new Phaser.Game(config);
-
+// 載入資源(key, value) image、audio
     function preload ()
     {
         this.load.setBaseURL('http://labs.phaser.io');
@@ -32,7 +32,7 @@
         this.load.image('logo', 'assets/sprites/phaser3-logo.png');
         this.load.image('red', 'assets/particles/red.png');
     }
-
+// 布置場景 add.image、sound.play
     function create ()
     {
         this.add.image(400, 300, 'sky');
@@ -53,6 +53,7 @@
 
         emitter.startFollow(logo);
     }
+    // function update() 生命週期
     </script>
 
 </body>
